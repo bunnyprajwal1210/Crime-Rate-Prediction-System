@@ -3,7 +3,10 @@ import pickle
 import math
 import os
  
-model = pickle.load (open ("Model\\model.pkl", 'rb'))
+file_path = os.path.join(os.getcwd(), "Model", "model.pkl")
+
+with open(file_path, 'rb') as file:
+    model = pickle.load(file)
  
 app = Flask (__name__) 
  
