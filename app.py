@@ -2,7 +2,7 @@ from flask import Flask, request, render_template
 import pickle 
 import math
  
-model = pickle.load (open ('Model\model.pkl', 'rb')) 
+model = pickle.load (open ("model.pkl", 'rb')) 
  
 app = Flask (__name__) 
  
