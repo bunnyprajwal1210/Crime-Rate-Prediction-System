@@ -55,5 +55,5 @@ def predict_result ():
     return render_template('result.html', city_name=city_name, crime_type=crime_type, year=year, crime_status=crime_status, crime_rate=crime_rate, cases=cases, population=pop)
 
 if __name__ == '__main__':
-    # app.run (debug = False, host='0.0.0.0', port=5000) 
+    app.run (debug = False, host='0.0.0.0', port=5000) 
     app.run(debug = False)
